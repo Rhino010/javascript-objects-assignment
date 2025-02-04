@@ -52,11 +52,11 @@ findAuthor(catalog, 'Orwell')
 
 filterPages(catalog)
 
-function updateInfo(arr) {
-    arr.map(book => book.title = 'hello')
-    arr.map(book => book.author = 'me')
+function updateInfo(arr, title, author) {
+    arr.map(book => book.title = title)
+    arr.map(book => book.author = author)
     console.log(arr)
 }
 
 
-updateInfo(catalog)
+updateInfo(catalog, 'My fav', 'Me')
